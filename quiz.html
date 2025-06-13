@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="h-screen bg-[#F2F4F7] flex flex-col justify-center items-center px-2 w-full">
+    <div class="login">
+        <p class="text-2xl px-5 w-full ">If you want to participate. <br>Please enter your name below.</p>
+        <div class="flex flex-col justify-center items-center mt-5 gap-2">
+            <label for="name" class="text-2xl font-medium">Name</label>
+            <input type="Name" class="loginbox px-4 py-1.5 rounded-xl focus:outline-none font-medium">
+            <button class="start mt-3 px-3 py-2 bg-blue-500 rounded-xl text-white font-medium ">Start Quiz</button>
+        </div>
+    </div>
+    <div class="quizpage hidden px-6 ">
+        <p class="candinate text-2xl font-medium px-4 flex flex-col"></p>
+    <div class="Quiz-container mt-16 bg-white h-fit p-5 w-[300px] rounded-xl shadow-2xl flex flex-col justify-center gap-3">
+        <p class="questionnumber font-medium"></p>
+        <p class="questiontxt text-xl font-medium ">Question Text</p>
+        <div class="question-container flex flex-col justify-center gap-2">
+            <p class="flex items-center gap-2  font-medium cursor-pointer ">A.<span class="questions a" id="a">Question</span></p>
+            <p class="flex items-center gap-2  font-medium cursor-pointer ">B.<span class="questions b" id="b">Question</span></p>
+            <p class="flex items-center gap-2  font-medium cursor-pointer ">C.<span class="questions c" id="c">Question</span></p>
+            <p class="flex items-center gap-2  font-medium cursor-pointer ">D.<span class="questions d" id="d">Question</span></p>
+        </div>
+       <button class="submitbtn bg-blue-500  px-3 py-1.5 w-fit m-auto rounded-xl text-white font-medium ">Submit</button>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
